@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+	@SWG\Post(
+		
+		path="",
+		description="",
+		summary="",
+		tags={},
+		operationId="",
+		produces={"application/json"}
+
+	)
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>@SWG\Post</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

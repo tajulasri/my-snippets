@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+	@SWG\Property(property="",type="string",example="")
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>@SWG\Property</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>
