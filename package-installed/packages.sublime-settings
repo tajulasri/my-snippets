@@ -1,0 +1,35 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"AdvancedNewFile",
+		"All Autocomplete",
+		"Boxy Theme",
+		"Colorsublime",
+		"DocBlockr",
+		"Emmet",
+		"GitGutter",
+		"HTMLBeautify",
+		"JSCS-Formatter",
+		"Laravel 5 Snippets",
+		"Laravel Blade Highlighter",
+		"MarkdownEditing",
+		"Origami",
+		"Package Control",
+		"PHP Companion",
+		"PHP Getters and Setters",
+		"phpfmt",
+		"Pretty YAML",
+		"Python PEP8 Autoformat",
+		"SFTP",
+		"Stack Overflow Snippets",
+		"Theme - Flatland",
+		"Theme - Soda",
+		"Visual Studio Dark",
+		"Vue Syntax Highlight"
+	]
+}
