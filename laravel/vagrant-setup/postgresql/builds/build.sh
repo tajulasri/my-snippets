@@ -1,6 +1,5 @@
 #!/bin/sh
 
-##just sample and minimal vagrant script for laravel and postgresql / apache
 export DEBIAN_FRONTEND=noninteractive
 
 sudo apt-get update
@@ -66,12 +65,18 @@ sudo a2enmod rewrite
 
 #run postgresql installation
 
-sudo apt-get install postgresql-9.6
+sudo apt-get install postgresql -y
 
-sudo -u postgres createdb example_database;
+sudo echo "host    all             all             0.0.0.0/0                md5" | sudo tee -a /etc/postgresql/9.5/main/pg_hba.conf
+
+sudo -u postgres createdb laravel;
+sudo -u postgres createuser laravel
+sudo -u postgres psql -c "alter user laravel with encrypted password 'password'"
+sudo -u postgres psql -c "grant all privileges on database centricpos to laravel"
+
 #sudo rm -f /etc/php/7.1/apache2/php.ini
 #sudo cp /var/www/html/php.ini.default /etc/php/7.1/apache2/php.ini
 
-sudo apt-get install redis-server
+sudo apt-get install redis-server -y
 
 sudo service apache2 restart && sudo service postgresql restart > /dev/null
